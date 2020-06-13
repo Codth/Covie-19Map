@@ -5,8 +5,6 @@ var graphqlHTTP = require('express-graphql');
 var { buildSchema } = require('graphql');
 
 router.get('/', (req, res) => {
-    https://covidtracking.com/api/v1/us/current.json
-
     request.get("https://covidtracking.com/api/v1/states/current.json", (err, response, body) => {
 
         request.get("https://covidtracking.com/api/v1/us/current.json", (err, response, body2) => {
