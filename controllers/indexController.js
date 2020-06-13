@@ -11,7 +11,8 @@ router.get('/', (req, res) => {
 
         request.get("https://covidtracking.com/api/v1/us/current.json", (err, response, body2) => {
             console.log(JSON.parse(body2));
-        res.render('view/index', {
+        res.render('view/index', { 
+            title: 'Covid-19 Map',
             data: JSON.parse(body),
             total: JSON.parse(body2)[0],
         });
@@ -34,6 +35,7 @@ router.get('/:state', (req, res) => {
             }
         }
         res.render('view/detail', {
+            title: 'Covid-19 Detail',
             data:state[position]
         });
     });
