@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6aa9e2d1-e781-46e8-b16c-10e491158167" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/controllers/indexController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/indexController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/layouts/mainLayout.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/layouts/mainLayout.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,6 +52,7 @@
       <updated>1592018579435</updated>
       <workItem from="1592018580717" duration="10934000" />
       <workItem from="1592030317084" duration="703000" />
+      <workItem from="1592074820367" duration="145000" />
     </task>
     <servers />
   </component>
