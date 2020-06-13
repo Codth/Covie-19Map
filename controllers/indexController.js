@@ -8,7 +8,6 @@ router.get('/', (req, res) => {
     request.get("https://covidtracking.com/api/v1/states/current.json", (err, response, body) => {
 
         request.get("https://covidtracking.com/api/v1/us/current.json", (err, response, body2) => {
-            console.log(JSON.parse(body2));
         res.render('view/index', { 
             title: 'Covid-19 Map',
             data: JSON.parse(body),

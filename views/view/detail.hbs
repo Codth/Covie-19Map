@@ -1,7 +1,8 @@
 <div>
 
-    <p> State: {{data.state}} </p>
-    <p> Date: {{data.date}} </p>
+    <p><b> State: {{data.state}} </b></p>
+    <p><b> Date:  <span  id="getDate">{{data.date}} </span></b></p>
+    <p><b>DataQualityGrade: {{data.dataQualityGrade}}</b></p>
 
 
     <table class="table">
@@ -13,21 +14,17 @@
             <th scope="col">Recovered</th>
             <th scope="col">PositiveIncrease</th>
             <th scope="col">Total</th>
-            <th scope="col">TotalTestResults</th>
-            <th scope="col">DataQualityGrade</th>
         </tr>
         </thead>
 
 
         <tbody>
         <tr>
-            <th scope="row">{{data.positive}}</th>
-            <td>{{data.negative}}</td>
-            <td>{{data.recovered}}</td>
-            <td>{{data.positiveIncrease}}</td>
-            <td>{{data.total}}</td>
-            <td>{{data.totalTestResults}}</td>
-            <td>{{data.dataQualityGrade}}</td>
+            <th scope="row" class="num">{{data.positive}}</th>
+            <td class="num">{{data.negative}}</td>
+            <td class="num">{{data.recovered}}</td>
+            <td class="num">{{data.positiveIncrease}}</td>
+            <td class="num">{{data.total}}</td>
         </tr>
         </tbody>
     </table>
@@ -36,6 +33,35 @@
 
 
 <script>
+  var $date = $('#getDate').text();
+  // var $num = $('.num').text();
+
+  $.each($('.num'), function(index, element) {
+      if($(this).text() == ''){
+          $(this).text('Not available');
+      }
+  });
+
+
+
+  let year = $date.substring(0, 4);
+  let month = $date.substring(4, 6);
+  if(month == '06'){
+      mongth = 'June'
+  }else if (month == '07'){
+      month = 'July'
+  }
+  let day = $date.substring(6, 8);
+  let str = '' + mongth + ' ' + day + ' ' + year;
+  $('#getDate').text(str);
+
+
+
+
+
+
 
 
 </script>
+
+

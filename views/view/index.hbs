@@ -61,7 +61,7 @@
     var simplemaps_usmap_mapdata={
         main_settings: {
             //General settings
-            width: "700", //or 'responsive'
+            width: "responsive", //or 'responsive'
             background_color: "#FFFFFF",
             background_transparent: "yes",
             popups: "detect",
@@ -69,10 +69,11 @@
             //State defaults
             state_description: "State description",
             state_color: "#88A4BC",
-            state_hover_color: "#3B729F",
+            state_hover_color: "off",
             state_url: "#0",
-            border_size: 1.5,
+            border_size: 2.0,
             border_color: "#ffffff",
+            border_hover_color: "grey",
             all_states_inactive: "no",
             all_states_zoomable: "no",
 
@@ -137,7 +138,7 @@
 
         {{this.state}}: {
                 name: "{{this.state}}",
-                description: "Positive: {{this.positive}}, recorved: {{this.recovered}}, death: {{this.death}}, increase: {{this.positiveIncrease}}",
+                description: "<b>Positive: {{this.positive}}</b> <br/> Recorved: {{this.recovered}} <br/> Death: {{this.death}} <br/> Increase: {{this.positiveIncrease}}",
                 color: getColor({{this.positive}}),
                 hover_color: "default",
                 url: "/{{this.state}}"
@@ -149,23 +150,6 @@
 
         },
         locations: {
-            "0": {
-                name: "New York",
-                lat: 40.71,
-                lng: -74,
-                description: "default",
-                color: "default",
-                url: "default",
-                type: "default",
-                size: "default"
-            },
-            "1": {
-                name: "Anchorage",
-                lat: 61.2180556,
-                lng: -149.9002778,
-                color: "default",
-                type: "circle"
-            }
         },
         labels: {
             NH: {
