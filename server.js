@@ -22,7 +22,7 @@ app.set('view engine', 'hbs');
 
 var port = process.env.PORT || 8080;
 app.listen(port, () => {
-    console.log('Express server started at port : 3000');
+    console.log('Express server started at port : 8080');
 });
 
 app.use('/', indexController);

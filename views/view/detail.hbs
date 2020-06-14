@@ -1,16 +1,26 @@
+<style>
+    .chart{
+        margin-top: 20px;
+    }
+</style>
+
 <div>
 
-    <p><b> State: {{data.state}} </b></p>
-    <p><b> Date:  <span  id="getDate">{{data.date}} </span></b></p>
-    <p><b>DataQualityGrade: {{data.dataQualityGrade}}</b></p>
+    <div style="font-weight: bold">
+
+        <h2>State:  <span class="badge badge-secondary">{{meta.name}}</span></h2>
+
+        <h4> Date:  <span  id="getDate">{{data.date}} </span></h4>
+        <h4>DataQualityGrade: <span class="badge" id="grade">{{data.dataQualityGrade}}</span> </h4>
+    </div>
 
 
-    <table class="table">
+    <table class="table" style="margin-top: 30px">
 
         <thead>
         <tr>
             <th scope="col">Positive</th>
-            <th scope="col">Negative</th>
+            <th scope="col">Death</th>
             <th scope="col">Recovered</th>
             <th scope="col">PositiveIncrease</th>
             <th scope="col">Total</th>
@@ -21,7 +31,7 @@
         <tbody>
         <tr>
             <th scope="row" class="num">{{data.positive}}</th>
-            <td class="num">{{data.negative}}</td>
+            <td class="num">{{data.death}}</td>
             <td class="num">{{data.recovered}}</td>
             <td class="num">{{data.positiveIncrease}}</td>
             <td class="num">{{data.total}}</td>
@@ -29,7 +39,212 @@
         </tbody>
     </table>
 
+    <div style="margin-top: 30px">
+
+        <ul class="list-group">
+            <li class="list-group-item active"> <b>Notes: </b><br/> {{meta.notes}}</li>
+            <li class="list-group-item"><b>Detailed link: </b><a href="{{meta.covid19Site}}">{{meta.covid19Site}}</a></li>
+            <li class="list-group-item"><b>Twitter: </b> {{meta.twitter}}</li>
+        </ul>
+
+    </div>
+
+    <div style="width: 100%">
+        <div class="container" style="padding: 0; margin-top: 20px">
+            <div class="row">
+                <div class="col"><canvas class="chart" id="totalcases"></canvas></div>
+                <div class="col"><canvas class="chart" id="positiveIncrease"></canvas></div>
+
+                <!-- Force next columns to break to new line at md breakpoint and up -->
+                <div class="w-100 d-none d-md-block"></div>
+
+                <div class="col"><canvas class="chart" id="death"></canvas></div>
+                <div class="col"><canvas class="chart" id="hospitalized"></canvas></div>
+
+                <!-- Force next columns to break to new line at md breakpoint and up -->
+                <div class="w-100 d-none d-md-block"></div>
+
+                <div class="col"><canvas class="chart" id="recorved"></canvas></div>
+                <div class="col"><canvas class="chart" id="inIcuCumulative"></canvas></div>
+            </div>
+        </div>
+    </div>
+
+
+
 </div>
+
+<script>
+    var ct1 = document.getElementById('totalcases').getContext('2d');
+    var ct2 = document.getElementById('positiveIncrease').getContext('2d');
+    var ct3 = document.getElementById('death').getContext('2d');
+    var ct4 = document.getElementById('hospitalized').getContext('2d');
+    var ct5 = document.getElementById('recorved').getContext('2d');
+    var ct6 = document.getElementById('inIcuCumulative').getContext('2d');
+
+
+
+    Chart.defaults.global.elements.point.pointStyle = 'line';
+    var chart = new Chart(ct1, {
+        // The type of chart we want to create
+        type: 'line',
+        // The data for our dataset
+        data: {
+            labels: [{{#each label}} '{{this}}', {{/each}}],
+            datasets: [{
+                label: 'Total Cases',
+                backgroundColor: 'rgba(0, 0, 0, 0.1)',
+                borderColor: '#00b3b3',
+                data: [{{totalcases}}]
+            }]
+        },
+
+        // Configuration options go here
+        options: {
+            title: {
+                display: true,
+                text: 'Total Cases',
+                fontSize: 22,
+                fontFamily: 'Helvetica',
+                fontColor: 'black'
+            }
+        }
+    });
+
+    var chart = new Chart(ct2, {
+        // The type of chart we want to create
+        type: 'line',
+        // The data for our dataset
+        data: {
+            labels: [{{#each label}} '{{this}}', {{/each}}],
+            datasets: [{
+                label: 'DailyIncrease',
+                backgroundColor: 'rgba(0, 0, 0, 0.1)',
+                borderColor: '#ff9933',
+                data: [{{positiveIncrease}}]
+            }]
+        },
+
+        // Configuration options go here
+        options: {
+            title: {
+                display: true,
+                text: 'DailyIncrease',
+                fontSize: 22,
+                fontFamily: 'Helvetica',
+                fontColor: 'black'
+            }
+        }
+    });
+
+    var chart = new Chart(ct3, {
+        // The type of chart we want to create
+        type: 'line',
+        // The data for our dataset
+        data: {
+            labels: [{{#each label}} '{{this}}', {{/each}}],
+            datasets: [{
+                label: 'Death',
+                backgroundColor: '#ff0000',
+                borderColor: '#ff0000',
+                data: [{{death}}]
+            }]
+        },
+
+        // Configuration options go here
+        options: {
+            title: {
+                display: true,
+                text: 'Death',
+                fontSize: 22,
+                fontFamily: 'Helvetica',
+                fontColor: 'black'
+            }
+        }
+    });
+
+    var chart = new Chart(ct4, {
+        // The type of chart we want to create
+        type: 'line',
+        // The data for our dataset
+        data: {
+            labels: [{{#each label}} '{{this}}', {{/each}}],
+            datasets: [{
+                label: 'Hospitalized',
+                backgroundColor: '#1a8cff',
+                borderColor: '#1a8cff',
+                data: [{{hospitalized}}]
+            }]
+        },
+
+        // Configuration options go here
+        options: {
+            title: {
+                display: true,
+                text: 'Hospitalized',
+                fontSize: 22,
+                fontFamily: 'Helvetica',
+                fontColor: 'black'
+            }
+        }
+    });
+
+    var chart = new Chart(ct5, {
+        // The type of chart we want to create
+        type: 'line',
+        // The data for our dataset
+        data: {
+            labels: [{{#each label}} '{{this}}', {{/each}}],
+            datasets: [{
+                label: 'Recorved',
+                backgroundColor: 'rgba(0, 0, 0, 0.1)',
+                borderColor: '#00b300',
+                data: [{{recorved}}]
+            }]
+        },
+
+        // Configuration options go here
+        options: {
+            title: {
+                display: true,
+                text: 'Recorved',
+                fontSize: 22,
+                fontFamily: 'Helvetica',
+                fontColor: 'black'
+            }
+        }
+    });
+
+
+    var chart = new Chart(ct6, {
+        // The type of chart we want to create
+        type: 'line',
+        // The data for our dataset
+        data: {
+            labels: [{{#each label}} '{{this}}', {{/each}}],
+            datasets: [{
+                label: 'IcuCumulative',
+                backgroundColor: 'rgba(0, 0, 0, 0.1)',
+                borderColor: '#669999',
+                data: [{{inIcuCumulative}}]
+            }]
+        },
+
+        // Configuration options go here
+        options: {
+            title: {
+                display: true,
+                text: 'ICU Cumulative',
+                fontSize: 22,
+                fontFamily: 'Helvetica',
+                fontColor: 'black'
+            }
+        }
+    });
+
+
+</script>
+
 
 
 <script>
@@ -47,13 +262,22 @@
   let year = $date.substring(0, 4);
   let month = $date.substring(4, 6);
   if(month == '06'){
-      mongth = 'June'
+      month = 'June'
   }else if (month == '07'){
       month = 'July'
   }
   let day = $date.substring(6, 8);
-  let str = '' + mongth + ' ' + day + ' ' + year;
+  let str = '' + month + ' ' + day + ' ' + year;
   $('#getDate').text(str);
+
+     var grade = $('#grade').text();
+    if(grade == 'A' || grade == 'A+' || grade == 'A-'){
+        $('#grade').addClass('badge-success')
+    }else if (grade == 'B' || grade == 'B+' || grade == 'B-'){
+        $('#grade').addClass('badge-warning')
+    }else if (grade == 'C' || grade == 'C+' || grade == 'C-'){
+        $('#grade').addClass('badge-danger')
+    }
 
 
 
