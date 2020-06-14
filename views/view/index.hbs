@@ -100,7 +100,7 @@
         data: {
             labels: [{{#each label}} '{{this}}', {{/each}}],
             datasets: [{
-                label: 'DailyIncrease',
+                label: 'Daily Increase',
                 backgroundColor: 'rgba(0, 0, 0, 0.1)',
                 borderColor: '#ff9933',
                 data: [{{positiveIncrease}}]
@@ -111,7 +111,7 @@
         options: {
             title: {
                 display: true,
-                text: 'DailyIncrease',
+                text: 'Daily Increase',
                 fontSize: 22,
                 fontFamily: 'Helvetica',
                 fontColor: 'black'
@@ -204,8 +204,8 @@
         // The data for our dataset
         data: {
             labels: [{{#each label}} '{{this}}', {{/each}}],
-            datasets: [{
-                label: 'IcuCumulative',
+            datasets: [{ 
+                label: 'ICU Admissions',
                 backgroundColor: 'rgba(0, 0, 0, 0.1)',
                 borderColor: '#669999',
                 data: [{{inIcuCumulative}}]
@@ -216,7 +216,7 @@
         options: {
             title: {
                 display: true,
-                text: 'ICU Cumulative',
+                text: 'ICU Admissions',
                 fontSize: 22,
                 fontFamily: 'Helvetica',
                 fontColor: 'black'
