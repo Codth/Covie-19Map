@@ -222,8 +222,8 @@
         // The data for our dataset
         data: {
             labels: [{{#each label}} '{{this}}', {{/each}}],
-            datasets: [{
-                label: 'IcuCumulative',
+            datasets: [{ 
+                label: 'ICU Admissions',
                 backgroundColor: 'rgba(0, 0, 0, 0.1)',
                 borderColor: '#669999',
                 data: [{{inIcuCumulative}}]
@@ -234,7 +234,7 @@
         options: {
             title: {
                 display: true,
-                text: 'ICU Cumulative',
+                text: 'ICU Admissions',
                 fontSize: 22,
                 fontFamily: 'Helvetica',
                 fontColor: 'black'
@@ -257,8 +257,6 @@
       }
   });
 
-
-
   let year = $date.substring(0, 4);
   let month = $date.substring(4, 6);
   if(month == '06'){
@@ -278,14 +276,6 @@
     }else if (grade == 'C' || grade == 'C+' || grade == 'C-'){
         $('#grade').addClass('badge-danger')
     }
-
-
-
-
-
-
-
-
 </script>
 
 
