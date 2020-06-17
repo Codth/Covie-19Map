@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6aa9e2d1-e781-46e8-b16c-10e491158167" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/views/img/lung.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/indexController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/indexController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/layouts/mainLayout.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/layouts/mainLayout.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/view/detail.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/view/detail.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/view/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/view/index.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,15 +36,16 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Learn-GraphQL-master/Learn-GraphQL-master" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\gyb00\Desktop\covid\map\views\img" />
-      <recent name="C:\Users\gyb00\Desktop\covid\map\views\javascript" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\gyb00\Desktop\covid\map\views\view" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gyb00\Desktop\Covie-19Map\views\img" />
+      <recent name="C:\Users\gyb00\Desktop\covid\map\views\img" />
+      <recent name="C:\Users\gyb00\Desktop\covid\map\views\javascript" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -57,7 +61,11 @@
       <workItem from="1592018580717" duration="10934000" />
       <workItem from="1592030317084" duration="703000" />
       <workItem from="1592074820367" duration="3258000" />
-      <workItem from="1592090852105" duration="14480000" />
+      <workItem from="1592090852105" duration="15296000" />
+      <workItem from="1592111110664" duration="216000" />
+      <workItem from="1592111593888" duration="459000" />
+      <workItem from="1592192160174" duration="192000" />
+      <workItem from="1592364548558" duration="2534000" />
     </task>
     <servers />
   </component>
@@ -65,6 +73,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="805" y="312" key="FileChooserDialogImpl" timestamp="1592192344002">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="805" y="312" key="FileChooserDialogImpl/0.0.2048.1112@0.0.2048.1112" timestamp="1592192344002" />
     <state x="681" y="259" key="run.anything.popup" timestamp="1592101170798">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>

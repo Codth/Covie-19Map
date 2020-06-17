@@ -6,6 +6,7 @@
 
 <div>
 
+
     <div style="font-weight: bold">
 
         <h2>State:  <span class="badge badge-secondary">{{meta.name}}</span></h2>
@@ -19,10 +20,10 @@
 
         <thead>
         <tr>
-            <th scope="col">Positive</th>
+            <th scope="col">Total Cases</th>
             <th scope="col">Death</th>
-            <th scope="col">Recovered</th>
-            <th scope="col">PositiveIncrease</th>
+            <th scope="col">Recovered</th> 
+            <th scope="col">Daily Increase</th>
             <th scope="col">Total</th>
         </tr>
         </thead>
@@ -222,7 +223,7 @@
         // The data for our dataset
         data: {
             labels: [{{#each label}} '{{this}}', {{/each}}],
-            datasets: [{ 
+            datasets: [{
                 label: 'ICU Admissions',
                 backgroundColor: 'rgba(0, 0, 0, 0.1)',
                 borderColor: '#669999',

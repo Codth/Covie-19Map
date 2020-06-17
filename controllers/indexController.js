@@ -73,6 +73,7 @@ router.get('/', (req, res) => {
 
                 res.render('view/index', {
                     title: 'Covid-19 Map',
+                    head: 'US Overview',
                     data: JSON.parse(body),
                     total: JSON.parse(body2)[0],
 
@@ -116,6 +117,7 @@ router.get('/:state', (req, res) => {
 
                 res.render('view/detail', {
                     title: 'Covid-19 Detail',
+                    head: 'State Detail',
                     data:  state[position],
                     meta: state2[position],
                     label: arr[0],
