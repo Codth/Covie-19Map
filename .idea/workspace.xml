@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6aa9e2d1-e781-46e8-b16c-10e491158167" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/views/img/lung.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/img/lung2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/indexController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/indexController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/layouts/mainLayout.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/layouts/mainLayout.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/view/detail.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/view/detail.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/view/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/view/index.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,10 +34,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Learn-GraphQL-master/Learn-GraphQL-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/views/img" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\gyb00\Desktop\Covie-19Map\views\img" />
       <recent name="C:\Users\gyb00\Desktop\covid\map\views\view" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -65,7 +64,7 @@
       <workItem from="1592111110664" duration="216000" />
       <workItem from="1592111593888" duration="459000" />
       <workItem from="1592192160174" duration="192000" />
-      <workItem from="1592364548558" duration="2534000" />
+      <workItem from="1592364548558" duration="2991000" />
     </task>
     <servers />
   </component>
