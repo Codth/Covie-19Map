@@ -62,7 +62,7 @@ function getArray(info, identifier){
 }
 
 
-function getFullname(body, body2){ 
+function getFullname(body, body2){
   let a = JSON.parse(body);
   let b = JSON.parse(body2);
 
