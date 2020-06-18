@@ -59,33 +59,48 @@ function getArray(info, identifier){
     }
 
     return [labels,totalcases,positiveIncrease,death,hospitalized,recorved,inIcuCumulative];
-
 }
 
 
+function getFullname(body, body2){ 
+  let a = JSON.parse(body);
+  let b = JSON.parse(body2);
+
+  for(var i =0; i<a.length; i++){
+      for(var y =0; y<b.length; y++){
+          if(a[i].state == b[y].state){
+              a[i].fullname = b[y].name;
+              break;
+          }
+      }
+  }
+  return a;
+}
+
 router.get('/', (req, res) => {
     request.get("https://covidtracking.com/api/v1/states/current.json", (err, response, body) => {
+        request.get("https://covidtracking.com/api/v1/states/info.json", (err, response, all) => {
+            request.get("https://covidtracking.com/api/v1/us/current.json", (err, response, body2) => {
+                request.get("https://covidtracking.com/api/v1/us/daily.json", (err, response, info) => {
 
-        request.get("https://covidtracking.com/api/v1/us/current.json", (err, response, body2) => {
-            request.get("https://covidtracking.com/api/v1/us/daily.json", (err, response, info) => {
+                    let arr = getArray(info,1);
+                    let after = getFullname (body, all);
 
-                let arr = getArray(info,1);
+                    res.render('view/index', {
+                        title: 'Covid-19 Map',
+                        head: 'US Overview',
+                        data: after,
+                        total: JSON.parse(body2)[0],
 
-                res.render('view/index', {
-                    title: 'Covid-19 Map',
-                    head: 'US Overview',
-                    data: JSON.parse(body),
-                    total: JSON.parse(body2)[0],
-
-                    label: arr[0],
-                    totalcases: arr[1],
-                    positiveIncrease: arr[2],
-                    death: arr[3],
-                    hospitalized: arr[4],
-                    recorved:arr[5],
-                    inIcuCumulative: arr[6]
+                        label: arr[0],
+                        totalcases: arr[1],
+                        positiveIncrease: arr[2],
+                        death: arr[3],
+                        hospitalized: arr[4],
+                        recorved:arr[5],
+                        inIcuCumulative: arr[6]
+                    });
                 });
-
             });
         });
     });

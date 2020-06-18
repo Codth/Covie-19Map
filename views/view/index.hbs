@@ -326,7 +326,7 @@
     {{#each data}}
 
         {{this.state}}: {
-                name: "{{this.state}}",
+                name: "{{this.fullname}}",
                 description: "<b>Positive: {{this.positive}}</b> <br/> Recorved: {{this.recovered}} <br/> Death: {{this.death}} <br/> Increase: {{this.positiveIncrease}}",
                 color: getColor({{this.positive}}),
                 hover_color: "default",
