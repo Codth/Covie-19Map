@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6aa9e2d1-e781-46e8-b16c-10e491158167" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/views/img/song1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/img/song2.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/indexController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/indexController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/layouts/mainLayout.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/layouts/mainLayout.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/view/detail.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/view/detail.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/view/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/view/index.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,14 +38,14 @@
     <property name="last_opened_file_path" value="F:/node practice/socket.io-master/socket.io-master/examples/chat" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\gyb00\Desktop\Covie-19Map\views\img" />
-      <recent name="C:\Users\gyb00\Desktop\covid\map\views\view" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\gyb00\Desktop\Covie-19Map\views\img" />
       <recent name="C:\Users\gyb00\Desktop\covid\map\views\img" />
       <recent name="C:\Users\gyb00\Desktop\covid\map\views\javascript" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\gyb00\Desktop\Covie-19Map\views\img" />
+      <recent name="C:\Users\gyb00\Desktop\covid\map\views\view" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -67,7 +69,14 @@
       <workItem from="1592431985792" duration="71000" />
       <workItem from="1592433850579" duration="663000" />
       <workItem from="1592453722001" duration="21000" />
-      <workItem from="1592455118096" duration="4704000" />
+      <workItem from="1592455118096" duration="5050000" />
+      <workItem from="1592522471402" duration="344000" />
+      <workItem from="1592575168688" duration="1210000" />
+      <workItem from="1592619917132" duration="166000" />
+      <workItem from="1592620234876" duration="265000" />
+      <workItem from="1592622168298" duration="455000" />
+      <workItem from="1592713202524" duration="345000" />
+      <workItem from="1592850457864" duration="252000" />
     </task>
     <servers />
   </component>
@@ -79,10 +88,10 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="628" y="149" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1592455876070" />
-    <state x="805" y="312" key="FileChooserDialogImpl" timestamp="1592432053234">
+    <state x="805" y="312" key="FileChooserDialogImpl" timestamp="1592713540800">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="805" y="312" key="FileChooserDialogImpl/0.0.2048.1112@0.0.2048.1112" timestamp="1592432053234" />
+    <state x="805" y="312" key="FileChooserDialogImpl/0.0.2048.1112@0.0.2048.1112" timestamp="1592713540800" />
     <state x="681" y="259" key="run.anything.popup" timestamp="1592101170798">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>

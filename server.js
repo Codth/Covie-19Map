@@ -6,7 +6,7 @@ const exphbs = require('express-handlebars');
 const bodyparser = require('body-parser');
 
 const indexController = require('./controllers/indexController');
-var app = express();
+var app = express(); 
 
 // Add static media to the express
 app.use(express.static(__dirname + '/views/'));
