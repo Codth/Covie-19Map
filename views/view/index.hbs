@@ -78,13 +78,14 @@
 
 
     <div class="btn-group" role="group" aria-label="Basic example" style="margin-top: 50px">
-        <button type="button" class="btn btn-info" id="selectTable" style="width: 100px">Table</button>
-        <button type="button" class="btn btn-light" id="selectChart" style="width: 100px">Chart</button>
+        <button type="button" class="btn btn-info" id="selectChart" style="width: 100px">Chart</button>
+        <button type="button" class="btn btn-light" id="selectTable" style="width: 100px">Table</button>
+
     </div>
 
 
 
-    <div id="Table" style="margin-top: 50px">
+    <div id="Table" style="margin-top: 50px; display: none;">
         <div class="table100 ver1 m-b-110">
             <div class="table100-head">
                 <table>
@@ -130,7 +131,7 @@
 
 
 
-    <div id="Chart" style="display: none; margin-top: 50px">
+    <div id="Chart" style=" margin-top: 50px">
         <div style="width: 100%">
             <div class="container" style="padding: 0; margin-top: 20px">
                 <div class="row">
@@ -835,25 +836,17 @@
         $('#selectChart').addClass("btn-light");
     });
 
-    $('#selectChart').click(function() {
+    $('#selectChart').click(function() { 
         $('#Table').css("display", "none");
         $('#Chart').css("display", "block");
 
-        $('#selectChart').addClass("btn-info"); 
+        $('#selectChart').addClass("btn-info");
         $('#selectTable').addClass("btn-light");
         $('#selectChart').removeClass("btn-light");
         $('#selectTable').removeClass("btn-info");
     });
 
-    $('#Table').click();
-
-
-
-
-
-
-
-
+    $('#selectChart').click();
 
     $('.js-pscroll').each(function(){
         var ps = new PerfectScrollbar(this);

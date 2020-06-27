@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6aa9e2d1-e781-46e8-b16c-10e491158167" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/views/btsp/css/._main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/btsp/css/._util.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/btsp/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/btsp/css/util.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/btsp/js/._main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/btsp/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/btsp/vendor/perfect-scrollbar/._perfect-scrollbar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/btsp/vendor/perfect-scrollbar/._perfect-scrollbar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/btsp/vendor/perfect-scrollbar/perfect-scrollbar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/btsp/vendor/perfect-scrollbar/perfect-scrollbar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/btsp/vendor/select2/._select2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/btsp/vendor/select2/._select2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/btsp/vendor/select2/._select2.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/btsp/vendor/select2/._select2.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/btsp/vendor/select2/select2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/btsp/vendor/select2/select2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/btsp/vendor/select2/select2.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/btsp/vendor/select2/select2.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/indexController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/indexController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/layouts/mainLayout.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/layouts/mainLayout.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/view/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/view/index.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +75,7 @@
       <workItem from="1592622168298" duration="455000" />
       <workItem from="1592713202524" duration="345000" />
       <workItem from="1592850457864" duration="392000" />
-      <workItem from="1593220530219" duration="13218000" />
+      <workItem from="1593220530219" duration="14041000" />
     </task>
     <servers />
   </component>
