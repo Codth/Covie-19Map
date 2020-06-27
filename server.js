@@ -20,9 +20,9 @@ app.engine('hbs', exphbs({ extname: 'hbs', defaultLayout: 'mainLayout', layoutsD
 app.set('view engine', 'hbs');
 
 
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 3000;
 app.listen(port, () => {
-    console.log('Express server started at port : 8080');
+    console.log('Express server started at port : 3000');
 });
 
 app.use('/', indexController);

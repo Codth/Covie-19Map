@@ -83,8 +83,16 @@ router.get('/', (req, res) => {
             request.get("https://covidtracking.com/api/v1/us/current.json", (err, response, body2) => {
                 request.get("https://covidtracking.com/api/v1/us/daily.json", (err, response, info) => {
 
+
+
+
                     let arr = getArray(info,1);
                     let after = getFullname (body, all);
+
+                    after.sort(function(a, b) {
+                        return b.positive - a.positive;
+                    });
+
 
                     res.render('view/index', {
                         title: 'Covid-19 Map',
