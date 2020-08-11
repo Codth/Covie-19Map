@@ -274,11 +274,19 @@
 
   let year = $date.substring(0, 4);
   let month = $date.substring(4, 6);
+
   if(month == '06'){
       month = 'June'
   }else if (month == '07'){
       month = 'July'
+  }else if (month == '08'){
+      month = 'August'
+  }else if (month == '09'){
+      month = 'September'
+  }else if (month == '10'){
+      month = 'October'
   }
+
   let day = $date.substring(6, 8);
   let str = '' + month + ' ' + day + ' ' + year;
   $('#getDate').text(str);

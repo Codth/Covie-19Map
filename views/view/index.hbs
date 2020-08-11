@@ -388,16 +388,16 @@
     function getColor(pos){
        let val =  parseInt(pos)
         switch(true) {
-            case (val>= 100000):
+            case (val>= 200000):
                 return '#b30000'
                 break;
-            case (val >= 50000  && val < 100000):
+            case (val >= 100000  && val < 200000):
                 return '#ff8000'
                 break;
-            case (val >= 10000  && val < 50000):
+            case (val >= 50000  && val < 100000):
                 return '#f2d675'
                 break;
-            case (val >= 0  && val < 10000):
+            case (val >= 0  && val < 50000):
                 return '#f3e9c7'
                 break;
         }

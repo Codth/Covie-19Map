@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6aa9e2d1-e781-46e8-b16c-10e491158167" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/views/img/covidicon.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/layouts/mainLayout.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/layouts/mainLayout.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/view/detail.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/view/detail.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/view/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/view/index.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +77,16 @@
       <workItem from="1592622168298" duration="455000" />
       <workItem from="1592713202524" duration="345000" />
       <workItem from="1592850457864" duration="392000" />
-      <workItem from="1593220530219" duration="17250000" />
+      <workItem from="1593220530219" duration="17594000" />
+      <workItem from="1594341740148" duration="83000" />
+      <workItem from="1594342158295" duration="606000" />
+      <workItem from="1594774212909" duration="335000" />
+      <workItem from="1594775067148" duration="84000" />
+      <workItem from="1594777315809" duration="609000" />
+      <workItem from="1594778545718" duration="195000" />
+      <workItem from="1594779796031" duration="36000" />
+      <workItem from="1594780325116" duration="170000" />
+      <workItem from="1597179400931" duration="212000" />
     </task>
     <servers />
   </component>
